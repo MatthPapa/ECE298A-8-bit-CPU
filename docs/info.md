@@ -8,9 +8,24 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
-Our goal for this project is to implement 8-bit CPU using the TinyTapout. Below, you will find the proposal diagram that we plan to work on over the term, based off time and complexity restraints we will focus on adding more features to our cpu as needed:
+Our goal for this project is to implement 8-bit CPU using the TinyTapout. Below, you will find the proposal diagram that we plan to work on over the term, based off time and complexity restraints we will focus on adding more features to our cpu as needed.
+
+## Architecture
 
 ![Block Diagram](8BitCPUDiagram.png "Block Diagram")
+
+As seen in the diagram he CPU's architecture is coordinated by seperate unit blocks:
+
+#### Control Seq: 
+- This will be the brains of the CPU. A state machine that takes in instructions from the I/O, interprets its opcode and determines what units of the CPU need to be activated to get the requested output
+
+#### Arithmetic Logic Unit (ALU):
+- This unit takes in an input from the registers and performs mathematical operations based off the request from Control Sequencer (Add, Sub, etc). It then writes the output to the accumulator 
+
+#### Registers:
+- Index (A and B): Two 8-bit registers used for tempory storage.
+- Accumulator (Acc): An 8-bit register where the output of the ALU is saved.
+- Output: An 8-bit register used to hold the value of the output while CPU works on next instruction.
 
 ## Table of I/O Assignments
 
@@ -26,16 +41,5 @@ Considering the limited amount of input and outputs on the chip, we had to be sm
 | Clk | I/O [1] | In - clock for CPU controlled by test script |
 | RST' | I/O [0] | In - Resets PC |
 
-## Architecture
-The processor's operation is coordinated by several key functional blocks:
-
-#### Control Seq: 
-- This will be the brains of the CPU. A state machine that takes in instructions from the I/O, interprets its opcode and determines what units of the CPU need to be activated to get the requested output
-
-#### Arithmetic Logic Unit (ALU):
-- This unit takes in an input from the registers and performs mathematical operations based off the request from Control Sequencer (Add, Sub, etc). It then writes the output to the accumulator 
-
-#### Registers:
-- Index (A and B): Two 8-bit registers used for tempory storage.
-- Accumulator (Acc): An 8-bit register where the output of the ALU is saved.
-- Output: An 8-bit register used to hold the value of the output while CPU works on next instruction.
+##How to test
+Once each block is implemented we will create tests to ensure functionality, this section will update with time!
