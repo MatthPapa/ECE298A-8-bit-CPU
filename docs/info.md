@@ -12,7 +12,7 @@ Our goal for this project is to implement 8-bit CPU using the TinyTapout. Below,
 
 ![Block Diagram](8BitCPUDiagram.png "Block Diagram")
 
-##Table of I/O Assignments
+## Table of I/O Assignments
 
 Considering the limited amount of input and outputs on the chip, we had to be smart with how we map the signals to each pin. Below, you will find our mapping:
 
@@ -26,7 +26,7 @@ Considering the limited amount of input and outputs on the chip, we had to be sm
 | Clk | I/O [1] | In - clock for CPU controlled by test script |
 | RST' | I/O [0] | In - Resets PC |
 
-##Architecture
+## Architecture
 The processor's operation is coordinated by several key functional blocks:
 
 Control Seq: This is the brains of the CPU. It's a stae machine that takes in instructions from the I/O, interprets its opcode and what to do with it's immediate value.
