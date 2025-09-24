@@ -8,7 +8,7 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
-Our goal for this project is to implement 8-bit CPU using the TinyTapout. Below, you will find the proposal diagram that we plan to work on over the term, based off time and complexity restraints we will focus on adding more features to our cpu as needed.
+Our goal for this project is to implement 8-bit CPU using the TinyTapout. Below, you will find the proposal diagram that we plan to work on over the term, based off time and complexity restraints we will focus on adding more features to our cpu as needed
 
 ## Architecture
 
@@ -23,9 +23,9 @@ As seen in the diagram he CPU's architecture is coordinated by seperate unit blo
 - This unit takes in an input from the registers and performs mathematical operations based off the request from Control Sequencer (Add, Sub, etc). It then writes the output to the accumulator 
 
 #### Registers:
-- Index (A and B): Two 8-bit registers used for tempory storage.
-- Accumulator (Acc): An 8-bit register where the output of the ALU is saved.
-- Output: An 8-bit register used to hold the value of the output while CPU works on next instruction.
+- Index (A and B): Two 8-bit registers used for tempory storage
+- Accumulator (Acc): An 8-bit register where the output of the ALU is saved
+- Output: An 8-bit register used to hold the value of the output while CPU works on next instruction
 
 ## Table of I/O Assignments
 
