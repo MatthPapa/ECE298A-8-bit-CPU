@@ -16,7 +16,7 @@ Our goal for this project is to implement 8-bit CPU using the TinyTapout. Below,
 
 As seen in the diagram he CPU's architecture is coordinated by seperate unit blocks:
 
-#### Control Seq: 
+#### Control Sequencer: 
 - This will be the brains of the CPU. A state machine that takes in instructions from the I/O, interprets its opcode and determines what units of the CPU need to be activated to get the requested output
 
 #### Arithmetic Logic Unit (ALU):
