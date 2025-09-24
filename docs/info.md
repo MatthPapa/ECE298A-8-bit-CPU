@@ -9,10 +9,6 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-[Projected Work Schedule](https://docs.google.com/document/d/1KP0tjoMqJHFCxz07KbVXQsKxXqZ9zHIiKM25s_u11yU/edit?usp=sharing)
-
-![Block Diagram](Block_Diagram_v1.png "Block Diagram")
-
 ![Block Diagram](Block_Diagram_Alt_v1.png "Block Diagram")
 
 ## How to test
