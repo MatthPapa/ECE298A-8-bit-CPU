@@ -27,13 +27,13 @@ Considering the limited amount of input and outputs on the chip, we had to be sm
 | RST' | I/O [0] | In - Resets PC |
 
 ## Architecture
-- The processor's operation is coordinated by several key functional blocks:
+The processor's operation is coordinated by several key functional blocks:
 
 #### Control Seq: 
 - This will be the brains of the CPU. A state machine that takes in instructions from the I/O, interprets its opcode and determines what units of the CPU need to be activated to get the requested output
 
 #### Arithmetic Logic Unit (ALU):
-- This unit takes in an input 
+- This unit takes in an input from the registers and performs mathematical operations based off the request from Control Sequencer (Add, Sub, etc). It then writes the output to the accumulator 
 
 #### Registers:
 - Index (A and B): Two 8-bit registers used for tempory storage.
