@@ -9,11 +9,25 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+[Projected Work Schedule](https://docs.google.com/document/d/1KP0tjoMqJHFCxz07KbVXQsKxXqZ9zHIiKM25s_u11yU/edit?usp=sharing)
+
+![Block Diagram](Block_Diagram_v1.png "Block Diagram")
+
+![Block Diagram](Block_Diagram_Alt_v1.png "Block Diagram")
 
 ## How to test
 
-Explain how to use your project
+Table of I/O Assignments
+
+| Internal Mapping | Pin Mapping | I/O |
+| ---------------- | ----------- | --- |
+| Data Bus Out [7:0] | Out [7:0] | Out - Output of CPU |
+| Data Bus In [7:0] | In [7:0] | In - Take in instruction from test script |
+| PC | I/O [7:4] | Out - Send to test script for correct instruction |
+| Instruction Enable | I/O [3] | Out - Tells test script to send instruction |
+| Clk | I/O [2] | In - clock for CPU controlled by test script |
+| RST' | I/O [1] | In - Resets PC |
+| Status | I/O [0] | Out - Tells status of CPU (active, error) |
 
 ## External hardware
 
