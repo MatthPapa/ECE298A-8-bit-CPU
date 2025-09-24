@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-![Block Diagram](Block_Diagram_Alt_v1.png "Block Diagram")
+![Block Diagram](8BitCPUDiagram.png "Block Diagram")
 
 ## How to test
 
