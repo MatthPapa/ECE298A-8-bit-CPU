@@ -8,10 +8,13 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
+Our goal for this project is to implement 8-bit CPU using the TinyTapout. Below, you will find the proposal diagram that we plan to work on over the term, based off time and complexity restraints we will focus on adding more features to our cpu as needed:
 
 ![Block Diagram](8BitCPUDiagram.png "Block Diagram")
 
 Table of I/O Assignments
+
+Considering the limited amount of input and outputs on the chip, we had to be smart with how we map the signals to each pin. Below, you will find our mapping:
 
 | Internal Mapping | Pin Mapping | I/O |
 | ---------------- | ----------- | --- |
