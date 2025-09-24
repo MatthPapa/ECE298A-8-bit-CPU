@@ -29,12 +29,12 @@ Considering the limited amount of input and outputs on the chip, we had to be sm
 ## Architecture
 The processor's operation is coordinated by several key functional blocks:
 
-### Control Seq: 
+#### Control Seq: 
 This is the brains of the CPU. It's a stae machine that takes in instructions from the I/O, interprets its opcode and what to do with it's immediate value.
 
-### Arithmetic Logic Unit (ALU):
+#### Arithmetic Logic Unit (ALU):
 
-### Registers:
+#### Registers:
 Index (A and B): Two 8-bit registers used for tempory storage.
 Accumulator (Acc): An 8-bit register where the output of the ALU is saved.
 Output: An 8-bit register used to hold the value of the output while CPU works on next instruction.
