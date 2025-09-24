@@ -41,5 +41,8 @@ Considering the limited amount of input and outputs on the chip, we had to be sm
 | Clk | I/O [1] | In - clock for CPU controlled by test script |
 | RST' | I/O [0] | In - Resets PC |
 
-##How to test
+## Work Schedule
+To make sure the work is split evenly and completed on time we have created a [task list](https://docs.google.com/document/d/1KP0tjoMqJHFCxz07KbVXQsKxXqZ9zHIiKM25s_u11yU/)
+
+## How to test
 Once each block is implemented we will create tests to ensure functionality, this section will update with time!
