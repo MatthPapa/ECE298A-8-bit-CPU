@@ -11,8 +11,6 @@ You can also include images in this folder and reference them in the markdown. E
 
 ![Block Diagram](8BitCPUDiagram.png "Block Diagram")
 
-## How to test
-
 Table of I/O Assignments
 
 | Internal Mapping | Pin Mapping | I/O |
@@ -21,9 +19,12 @@ Table of I/O Assignments
 | Data Bus In [7:0] | In [7:0] | In - Take in instruction from test script |
 | PC | I/O [7:4] | Out - Send to test script for correct instruction |
 | Instruction Enable | I/O [3] | Out - Tells test script to send instruction |
-| Clk | I/O [2] | In - clock for CPU controlled by test script |
-| RST' | I/O [1] | In - Resets PC |
-| Status | I/O [0] | Out - Tells status of CPU (active, error) |
+| Status | I/O [2] | Out - Tells status of CPU (active, error) |
+| Clk | I/O [1] | In - clock for CPU controlled by test script |
+| RST' | I/O [0] | In - Resets PC |
+## How to test
+
+
 
 ## External hardware
 
